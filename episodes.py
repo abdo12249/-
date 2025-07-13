@@ -86,7 +86,7 @@ def scrape_single_anime(base_url, total_episodes, start_number, skip_list, all_m
                     "number": episode_number,
                     "title": episode_title,
                     "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    "link": f"https://abdo12249.github.io/1/test1/episodes/المشاهده.html?id={anime_title.replace(' ', '-').lower()}&episode={episode_number}",
+                    "link" : f"https://abdo12249.github.io/1/test1/episodes/المشاهده.html?id={anime_title.replace(':', '').replace(' ', '-').lower()}&episode={episode_number}",
                     "image": f"https://abdo12249.github.io/1/images/{clean_title}.webp",
                     "servers": servers
                 }
